@@ -21,6 +21,19 @@ public class MainViewModel : INotifyPropertyChanged
         }
     }
 
+    private bool _switchToggled;
+    public bool SwitchToggled
+    {
+        get => _switchToggled;
+        set
+        {
+            _switchToggled = value;
+            OnPropertyChanged();
+        }
+    }
+
+    
+    
     public MainViewModel()
     {
         People = new ObservableCollection<Person>
