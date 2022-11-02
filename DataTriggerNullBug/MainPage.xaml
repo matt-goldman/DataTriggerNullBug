@@ -69,7 +69,11 @@
                     </HorizontalStackLayout>
 
                     <Stepper HorizontalOptions="Center"
-                             IsEnabled="{Binding SwitchToggled}"/>
+                             IsEnabled="{Binding SwitchToggled}"
+                             x:Name="TestStepper"/>
+
+                    <Button Text="Enable Stepper"
+                            Clicked="Button_Clicked"/>
                 </VerticalStackLayout>
             </Border>
 
